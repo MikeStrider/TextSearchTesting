@@ -1,0 +1,207 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45D1CC21-39D3-4B76-BDE0-F7F19A4ED6CB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TextSearchTesting</RootNamespace>
+    <AssemblyName>TextSearchTesting</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IFilterTextReader, Version=1.5.4.0, Culture=neutral, PublicKeyToken=d9137dea244ecc2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\IFilterTextReader.1.5.4\lib\IFilterTextReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="docFolder\other stuff\3480 - dataautocorr.docx" />
+    <Content Include="docFolder\other stuff\38262.docx" />
+    <Content Include="docFolder\other stuff\38507.docx" />
+    <Content Include="docFolder\other stuff\New folder\38507 %282%29.docx" />
+    <Content Include="docFolder\other stuff\New folder\38507.docx" />
+    <Content Include="docFolder\other stuff\New folder\again\Report Requirements Template.doc" />
+    <Content Include="docFolder\other stuff\New folder\again\Reports - Billing Reports.doc" />
+    <Content Include="docFolder\other stuff\New folder\again\Reports - Settlements Reports.doc" />
+    <Content Include="docFolder\other stuff\1. Company Profile and User Profiles\Administrative Security - Connect.doc" />
+    <Content Include="docFolder\other stuff\1. Company Profile and User Profiles\Administrative Security - VF and Pro .docx" />
+    <Content Include="docFolder\other stuff\1. Company Profile and User Profiles\Company Profile.doc" />
+    <Content Include="docFolder\other stuff\1. Company Profile and User Profiles\Corporate Defaults.doc" />
+    <Content Include="docFolder\other stuff\1. Company Profile and User Profiles\Expedite Alliance - Fleet Documentation.doc" />
+    <Content Include="docFolder\other stuff\1. Company Profile and User Profiles\How To - Limit User Access.docx" />
+    <Content Include="docFolder\other stuff\1. Company Profile and User Profiles\How To - Reset Your Password.docx" />
+    <Content Include="docFolder\other stuff\1. Company Profile and User Profiles\SYLECTUS Member Credit Score Application.doc" />
+    <Content Include="docFolder\other stuff\2. Customers\Customer Profile.docx" />
+    <Content Include="docFolder\other stuff\2. Customers\How To - Set Notification Rules.docx" />
+    <Content Include="docFolder\other stuff\2. Customers\How To - Use  National and Parent Accounts.docx" />
+    <Content Include="docFolder\other stuff\2. Customers\Maintaining Your Customers Data.doc" />
+    <Content Include="docFolder\other stuff\2. Customers\Regions, Zones, Commodity, and Customs Brokers.doc" />
+    <Content Include="docFolder\other stuff\2. Customers\Sales Teams.docx" />
+    <Content Include="docFolder\other stuff\Additional Modules\Border Connect.docx" />
+    <Content Include="docFolder\other stuff\Additional Modules\Card Intergration\Comdata - Express Cash.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Card Intergration\Comdata - Fuel Card-Credit Card.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Card Intergration\EFS Integration Documentaion.docx" />
+    <Content Include="docFolder\other stuff\Additional Modules\Card Intergration\Fleet One.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Card Intergration\T-Chek Integration.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Customer Owners Carriers Outside Tools\Carrier Vision for the Carrier.docx" />
+    <Content Include="docFolder\other stuff\Additional Modules\Customer Owners Carriers Outside Tools\Carrier Vision for the Sylectus User.docx" />
+    <Content Include="docFolder\other stuff\Additional Modules\Customer Owners Carriers Outside Tools\Fleet Vision for the Owner.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Customer Owners Carriers Outside Tools\Fleet Vision for the Sylectus User.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Customer Owners Carriers Outside Tools\Track and Trace for the Customer.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Customer Owners Carriers Outside Tools\Track and Trace for the Sylectus User.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\E-Pay Module.docx" />
+    <Content Include="docFolder\other stuff\Additional Modules\Fuel Tax %28IFTA%29\Fuel Management - Fuel Tax Import.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Fuel Tax %28IFTA%29\Fuel Tax Reporting - IFTA Module.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Hours of Service %28HOS%29\Dispatch - Qualcomm Hours of Service.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Hours of Service %28HOS%29\Fleet Management - Big Road Hours of Service.docx" />
+    <Content Include="docFolder\other stuff\Additional Modules\Imaging Module\Chapter 12B - Driver Satellite Training and Handbook.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Imaging Module\Document Imaging - Document Imaging .doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Imaging Module\Document Imaging - Form Faxing Module.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Imaging Module\Document Imaging - In Cab Scanning.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Imaging Module\Document Imaging - Pegasus TransTech Document Scanning.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Imaging Module\Document Imaging - Signature Capture.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Imaging Module\FORM FAXING MODULE.doc" />
+    <Content Include="docFolder\other stuff\Additional Modules\Imaging Module\How To - Review Paperwork Images.docx" />
+    <Content Include="docFolder\other stuff\Additional Modules\Imaging Module\How To - Upload Using GPSNet Uploader.docx" />
+    <Content Include="docFolder\other stuff\Additional Modules\Imaging Module\Uploader 2.0 - WinSPC.docx" />
+    <Content Include="docFolder\other stuff\Additional Modules\Overhead Costs.docx" />
+    <Content Include="docFolder\other stuff\Additional Modules\TowNet Integration.doc" />
+    <Content Include="aqua.ttf" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="docFolder\do not put files here.txt" />
+    <Content Include="images\foldericon.png" />
+    <Content Include="images\hover.png" />
+    <Content Include="images\kb.jpg" />
+    <Content Include="images\normal.png" />
+    <Content Include="images\pressed.png" />
+    <Content Include="loading3.gif" />
+    <Content Include="testing.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testing.aspx.cs">
+      <DependentUpon>testing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testing.aspx.designer.cs">
+      <DependentUpon>testing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64603</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64603/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

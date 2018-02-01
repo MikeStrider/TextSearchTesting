@@ -1,0 +1,16 @@
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\obj\Debug\TextSearchTesting.csproj.CoreCompileInputs.cache
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\bin\TextSearchTesting.dll.config
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\bin\TextSearchTesting.dll
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\bin\TextSearchTesting.pdb
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\bin\Lucene.Net.dll
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\bin\Lucene.Net.pdb
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\bin\Lucene.Net.xml
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\obj\Debug\TextSearchTesting.dll
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\obj\Debug\TextSearchTesting.pdb
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\bin\IFilterTextReader.dll
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\bin\IFilterTextReader.pdb
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\bin\IFilterTextReader.xml
+C:\Users\mikes\source\repos\TextSearchTesting\TextSearchTesting\obj\Debug\TextSearchTesting.csprojResolveAssemblyReference.cache
